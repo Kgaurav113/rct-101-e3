@@ -50,7 +50,7 @@ const {count}=useContext(CartContext)
           }
         </span>
         <button data-cy="product-decrement-cart-item-count-button" onClick={handleminus}>-</button>
-        <button data-cy="product-remove-cart-item-button" onClick={removecart}>REMOVE</button>
+        <button data-cy="product-remove-cart-item-button" onClick={removecart}>Remove</button>
       </div>
     </div>
    

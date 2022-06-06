@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Product from "./components/Products/Product/Product";
 import Home from "./pages/Home"
 import Login from './pages/Login';
-import RequiredAuth from "./hoc/RequiredAuth"
+// import RequiredAuth from "./hoc/RequiredAuth"
 function App() {
   return (
     <div className="App">
@@ -13,9 +13,9 @@ function App() {
       <Navbar/>
        <Routes>
         <Route path="" element={<Home/>}></Route>
-        <Route path="Product" element={
-        <RequiredAuth><Product/></RequiredAuth>}></Route>
         <Route path="Login" element={<Login/>}></Route>
+        <Route path="Product" element={<Product/>}>  </Route>
+       
        </Routes>
        </>
     </div>
